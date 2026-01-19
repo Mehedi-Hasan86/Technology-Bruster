@@ -1,0 +1,121 @@
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --gray: #e9ecef;
+}
+
+* {
+    margin: 0;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.main-content {
+    padding: 20px;
+    min-height: calc(100vh - 200px);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 4px;
+}
+
+thead {
+    background: var(--gray);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray);
+}
+
+tbody tr:hover {
+    background: var(--light);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.brand-logo {
+    width: 200px;        
+    height: 200px;        
+    object-fit: cover;   
+    
+
+    border-radius: 50%; 
+
+    border: 2px solid #007BFF; 
+}
